@@ -1,17 +1,24 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<script type="text/javascript" src="scripts.js">
-	</script>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
-
 <body>
+    
+    <button id="myBtn">Click me!</button>
 
-	<h2>Understanding how a button works</h2>
-	<button type="button" onclick="alert('Hi Abdullah!')">Press me!</button>
- 
+    
+    <script>
+        const myButton = document.getElementById("myBtn")
+        myButton.addEventListener('click', () => {
+            console.log("you've clicked a button")
+        }
+
+        )
+    </script>
+
 </body>
 </html>
-
-<html>
-
