@@ -12,6 +12,9 @@
     <div class="container-md my-5">
 
         <button class="btn btn-dark" onclick="changeBackgroundBlue();">Click me!</button>
+        <button class="btn btn-dark" onclick="changeBackgroundColors();">Click for multiple colors!</button>
+        <h4 my-5>Click for random button!!</h4>
+        <button class="btn btn-dark" onclick="changeBackgroundRandom();">Click for random colors!</button>
     
     </div>
     
@@ -21,17 +24,44 @@
         //const myButton = document.getElementById("myBtn");
 
         function changeBackgroundBlue() {
-            
-            if (document.body.style.backgroundColor === 'white'){
+
+            //console.log(document.body.style.backgroundColor);
+
+            if (document.body.style.backgroundColor === ''){
                 document.body.style.backgroundColor = "lightgray";
             }
-            else if (document.body.style.backgroundColor !== 'white'){
-                document.body.style.backgroundColor = "white";
+            else if (document.body.style.backgroundColor === 'lightgray'){
+                document.body.style.backgroundColor = "";
             }
 
             // myButton.addEventListener('click', () => {
             //     console.log("you've clicked a button");
             // });
+        }
+
+        let colors = ['lightgray','lightblue','pink','red','blue','cyan','lightgreen','green','purple','orange'];
+        let index = 0;
+        
+        function changeBackgroundColors(){
+            
+            document.body.style.backgroundColor = colors[index];
+            console.log(index, colors[index]);
+            
+            index++; 
+            if (index === colors.length ){
+                index = 0;
+            }
+            //console.log(colors.length);
+        }
+
+        
+        function changeBackgroundRandom(){
+            let random_index = Math.floor(Math.random() * colors.length);
+            if (random_index === colors.length ){
+                random_index = 0;
+            }
+            console.log(random_index, colors[random_index]);
+            document.body.style.backgroundColor = colors[random_index];
         }
     </script>
 
