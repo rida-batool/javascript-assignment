@@ -1,19 +1,22 @@
 
 
-function countDuplicatesSetsUI() {
-    var userInput = document.getElementById("userInput").value;
-    console.log(userInput);
+function countDuplicatesSetsUI(value) {
+    console.log(value.formValueId.value);
+    alert(value);
+    
+    var array = value.formValueId.value.split(",").map(Number);
+    console.log(array);
+
     let checkDuplicate = new Set();
 
     for (var index = 0; index < array.length; index++){
         var number = array[index];
 
         if (checkDuplicate.has(number)){
-             console.log('Duplicate number is ', number);
+            console.log('Duplicate number is ', number);
+            alert(number);
         }
         else {checkDuplicate.add(number)}
 
 }
-    alert(checkDuplicate)
-}
-
+}   
