@@ -24,12 +24,12 @@ function getDuplicates(numbers){
     }
 
 
-let duplicateOutput = getDuplicates([0,1,1,1,2,2,3,4,56,78,78,100,100]);
-console.log(duplicateOutput);
+// let duplicateOutput = getDuplicates([0,1,1,1,2,2,3,4,56,78,78,100,100]);
+// console.log(duplicateOutput);
 
 
-let duplicateOutput1 = getDuplicates([0,0]);
-console.log(duplicateOutput1);
+// let duplicateOutput1 = getDuplicates([0,0]);
+// console.log(duplicateOutput1);
 
 
 

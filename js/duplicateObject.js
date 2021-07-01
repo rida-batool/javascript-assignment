@@ -18,13 +18,13 @@ function findDuplicateObject(array){
 }
 
 
-console.log("--------------Start Find duplicate with Objects-------------")
+// console.log("--------------Start Find duplicate with Objects-------------")
 
-duplicateOutput = findDuplicateObject([0,1,1,1,2,2,2,3,4,56,78,78,100,100]);
-console.log(duplicateOutput);
+// duplicateOutput = findDuplicateObject([0,1,1,1,2,2,2,3,4,56,78,78,100,100]);
+// console.log(duplicateOutput);
 
 
-duplicateOutput1 = findDuplicateObject([0,0]);
-console.log(duplicateOutput1);
+// duplicateOutput1 = findDuplicateObject([0,0]);
+// console.log(duplicateOutput1);
 
-console.log("--------------End Find duplicate with Objects-------------")
+// console.log("--------------End Find duplicate with Objects-------------")
