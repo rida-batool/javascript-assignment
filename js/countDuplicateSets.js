@@ -1,6 +1,6 @@
 
 function countDuplicatesSets(array) {
-
+        console.log(array)  
         let checkDuplicate = new Set();
 
         for (var index = 0; index < array.length; index++){
@@ -14,9 +14,9 @@ function countDuplicatesSets(array) {
 }
 }
 
-// console.log("--------------Start Find duplicate with sets-------------")
-// duplicateOutput = countDuplicatesSets([0,1,1,1,2,2,2,3,4,56,78,78,100,100]);
-// console.log(duplicateOutput);
+console.log("--------------Start Find duplicate with sets-------------")
+duplicateOutput = countDuplicatesSets([0,1,1,1,2,2,2,3,4,56,78,78,100,100]);
+console.log(duplicateOutput);
 
 
 // duplicateOutput1 = countDuplicatesSets([]);
