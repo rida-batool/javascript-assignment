@@ -12,6 +12,7 @@
     <script type = "text/javascript" src="js/countDuplicateSetsUI.js"></script>
     <title>Javascript Change background color</title>
 </head>
+
 <body>
     
     <div class="container-md my-5">
@@ -23,14 +24,38 @@
     </div>
 
     <h3 my-5 mx-auto>Check duplicate values</h3>
-    <form class="my-5 mx-5" action="js/countDuplicateSetsUI.js">
+    <input type="text" id="myInput"> <br><br>
+    <button onclick="countDuplicatesSetsUI();"> Click Me!! </button> <br>
+    <!-- <form class="my-5 mx-5" action="js/countDuplicateSetsUI.js">
         userInput: <input type="text" name="formValueId" id="valueId"><br>
         <input type="button" id="theBtn" onclick="countDuplicatesSetsUI(this.form)" value="Submit" />
-        <!-- <button class="my-5 mx-3" onclick="countDuplicatesSetsUI()">Submit</button> -->
-    </form>
+        <button class="my-5 mx-3" onclick="countDuplicatesSetsUI()">Submit</button>
+    </form> -->
     
 
     <script>
+
+        function countDuplicatesSetsUI() {
+            let userInput = document.getElementById("myInput").value;
+            var arrstr = userInput.split(",")
+            const array = arrstr.map((i) => Number(i));
+            console.log(array)
+
+            let checkDuplicate = new Set();
+
+            for (var index = 0; index < array.length; index++){
+                var number = array[index];
+                
+
+                if (checkDuplicate.has(number)){
+                    console.log('Duplicate number is ', number);
+                    document.write(number)
+                    
+                }
+                else {checkDuplicate.add(number)}
+
+        }
+        }   
 
         //const myButton = document.getElementById("myBtn");
 
